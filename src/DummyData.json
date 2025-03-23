@@ -1,0 +1,20 @@
+{
+    "faqs":[
+        {
+           "qs" : "What is front end development",
+           "ans" : "Way to built userinterface"
+        },
+        {
+            "qs" : "What is front end development",
+            "ans" : "Way to built userinterface"
+         },
+         {
+            "qs" : "What is front end development",
+            "ans" : "Way to built userinterface"
+         },
+         {
+            "qs" : "What is front end development",
+            "ans" : "Way to built userinterface"
+         }
+    ]
+}
