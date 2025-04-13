@@ -2,9 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 
-
 function Home() {
-    const navigate = useNavigate()
+	const navigate = useNavigate();
 	return (
 		<div className="main-component">
 			<h2>Choose components</h2>
@@ -24,10 +23,39 @@ function Home() {
 						padding: "10px",
 					}}
 				>
-					<button onClick={()=>navigate('accordian')} className="btn-class">Accordian</button>
-					<button onClick={()=>navigate('file-explorer')} className="btn-class">File Manager</button>
-					<button onClick={()=> navigate('otp-field')} className="btn-class">Otp field</button>
-					<button onClick={()=>navigate('page-navigation')} className="btn-class">Pagination</button>
+					<button onClick={() => navigate("accordian")} className="btn-class">
+						Accordian
+					</button>
+					<button
+						onClick={() => navigate("file-explorer")}
+						className="btn-class"
+					>
+						File Manager
+					</button>
+					<button onClick={() => navigate("otp-field")} className="btn-class">
+						Otp field
+					</button>
+					<button
+						onClick={() => navigate("page-navigation")}
+						className="btn-class"
+					>
+						Pagination
+					</button>
+					<button onClick={() => navigate("react-tabs")} className="btn-class">
+						Tabs
+					</button>
+					<button
+						onClick={() => navigate("/interactive-grid")}
+						className="btn-class"
+					>
+						Interactive grid
+					</button>
+					<button
+						onClick={() => navigate("/infinite-scroll")}
+						className="btn-class"
+					>
+						Infinite Scroll
+					</button>
 				</div>
 			</div>
 		</div>
