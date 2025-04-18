@@ -97,3 +97,25 @@ span {
 	justify-content: center;
 	align-items: center;
 }
+.progress-container {
+	position: relative;
+	height: 20px;
+	width: 300px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.progress-bar {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: green;
+	/* transform: translateX(0%); */
+	position: absolute;
+}
+.signal {
+	height: 3rem;
+	width: 3rem;
+	border: 1px solid black;
+	border-radius: 50%;
+}

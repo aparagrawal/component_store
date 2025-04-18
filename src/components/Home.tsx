@@ -56,6 +56,24 @@ function Home() {
 					>
 						Infinite Scroll
 					</button>
+					<button
+						onClick={() => navigate("/type-effect")}
+						className="btn-class"
+					>
+						Type effect
+					</button>
+					<button
+						onClick={() => navigate("/progress-bar")}
+						className="btn-class"
+					>
+						Progress Bar
+					</button>
+					<button
+						onClick={() => navigate("/traffic-lights")}
+						className="btn-class"
+					>
+						Traffic Lights
+					</button>
 				</div>
 			</div>
 		</div>

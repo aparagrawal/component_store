@@ -8,6 +8,9 @@ import PageNavigation from "./components/pageNavigation";
 import Tabs from "./components/Tabs";
 import InteractiveGrid from "./components/InteractiveGrid";
 import InfiniteScroll from "./components/InfiniteScroll";
+import TypeEffect from "./components/TypeEffect";
+import ProgressBar from "./components/ProgressBar";
+import TrafficLights from "./components/TrafficLights";
 
 function App() {
 	const tabsData = [
@@ -40,6 +43,12 @@ function App() {
 				<Route path="react-tabs" element={<Tabs tabsData={tabsData} />} />
 				<Route path="interactive-grid" element={<InteractiveGrid />} />
 				<Route path="infinite-scroll" element={<InfiniteScroll />} />
+				<Route
+					path="type-effect"
+					element={<TypeEffect text="I am frontend developer" delay="100" />}
+				/>
+				<Route path="progress-bar" element={<ProgressBar />} />
+				<Route path="traffic-lights" element={<TrafficLights />} />
 			</Routes>
 		</Router>
 	);
