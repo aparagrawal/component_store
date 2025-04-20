@@ -12,6 +12,7 @@ import TypeEffect from "./components/TypeEffect";
 import ProgressBar from "./components/ProgressBar";
 import TrafficLights from "./components/TrafficLights";
 import Modal from "./components/Modal";
+import { useState } from "react";
 
 function App() {
 	const tabsData = [
@@ -33,10 +34,11 @@ function App() {
 		},
 	];
 
+	const [showModal, setShowModal] = useState(true);
+
 	return (
-		<Router>
+		<Router basename="component_store">
 			<Routes>
-				<Route path="/component_store/" element={<Home />} />
 				<Route path="accordian" element={<AccordianPage />} />
 				<Route path="otp-field" element={<OtpField />} />
 				<Route path="file-explorer" element={<FileExplorer />} />
@@ -50,7 +52,13 @@ function App() {
 				/>
 				<Route path="progress-bar" element={<ProgressBar />} />
 				<Route path="traffic-lights" element={<TrafficLights />} />
-				<Route path="modal" element={<Modal />} />
+				<Route
+					path="modal"
+					element={
+						<Modal isOpen={showModal} closeModal={() => setShowModal(false)} />
+					}
+				/>
+				<Route path="/" element={<Home />} />
 			</Routes>
 		</Router>
 	);
