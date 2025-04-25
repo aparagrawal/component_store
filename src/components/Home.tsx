@@ -77,6 +77,15 @@ function Home() {
 					<button onClick={() => navigate("/Modal")} className="btn-class">
 						Modal
 					</button>
+					<button
+						onClick={() => navigate("/memory-game")}
+						className="btn-class"
+					>
+						Memory Game
+					</button>
+					<button onClick={() => navigate("/drag-drop")} className="btn-class">
+						Drag and Drop
+					</button>
 				</div>
 			</div>
 		</div>

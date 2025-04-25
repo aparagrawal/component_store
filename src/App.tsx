@@ -12,6 +12,8 @@ import TypeEffect from "./components/TypeEffect";
 import ProgressBar from "./components/ProgressBar";
 import TrafficLights from "./components/TrafficLights";
 import Modal from "./components/Modal";
+import MemoryGame from "./components/MemoryGame";
+import DragAndDrop from "./components/DragAndDrop";
 import { useState } from "react";
 
 function App() {
@@ -34,6 +36,21 @@ function App() {
 		},
 	];
 
+	const initialData = {
+		Todo: [
+			"Design UI mockups",
+			"Set up project repository",
+			"Write unit test",
+			"Integrate payment gateway",
+		],
+		"In Progress": ["Develop authentication flow", "Implement routing"],
+		Completed: [
+			"Set up CI/CD pipeline",
+			"Conduct code reviews",
+			"Deploy initial version to staging",
+		],
+	};
+
 	const [showModal, setShowModal] = useState(true);
 
 	return (
@@ -52,6 +69,11 @@ function App() {
 				/>
 				<Route path="progress-bar" element={<ProgressBar />} />
 				<Route path="traffic-lights" element={<TrafficLights />} />
+				<Route path="memory-game" element={<MemoryGame />} />
+				<Route
+					path="drag-drop"
+					element={<DragAndDrop initialData={initialData} />}
+				/>
 				<Route
 					path="modal"
 					element={
