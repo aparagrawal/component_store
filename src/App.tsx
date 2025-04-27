@@ -16,6 +16,8 @@ import MemoryGame from "./components/MemoryGame";
 import DragAndDrop from "./components/DragAndDrop";
 import { useState } from "react";
 import VirtualizedList from "./components/VirtualizedList";
+import Stepper from "./components/Stepper";
+import TodoList from "./components/TodoList";
 
 function App() {
 	const tabsData = [
@@ -54,6 +56,31 @@ function App() {
 		],
 	};
 
+	const steps = [
+		{
+			label: "Personal Info",
+			content: (
+				<div className="step-component">Personal Information Content</div>
+			),
+		},
+		{
+			label: "Account Info",
+			content: <div className="step-component">Account Info Content</div>,
+		},
+		{
+			label: "Payment",
+			content: <div className="step-component">Payment Content</div>,
+		},
+		{
+			label: "Confirmation",
+			content: <div className="step-component">Confirmation Content</div>,
+		},
+		{
+			label: "Review",
+			content: <div className="step-component"> Review Content</div>,
+		},
+	];
+
 	const [showModal, setShowModal] = useState(true);
 
 	return (
@@ -77,6 +104,7 @@ function App() {
 					path="drag-drop"
 					element={<DragAndDrop initialData={initialData} />}
 				/>
+				<Route path="stepper-component" element={<Stepper steps={steps} />} />
 				<Route
 					path="modal"
 					element={
@@ -95,6 +123,7 @@ function App() {
 						/>
 					}
 				/>
+				<Route path="todo-list" element={<TodoList />} />
 			</Routes>
 		</Router>
 	);

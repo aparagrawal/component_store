@@ -9,8 +9,8 @@ function Home() {
 			<h2>Choose components</h2>
 			<div
 				style={{
-					height: "300px",
-					width: "500px",
+					height: "400px",
+					width: "600px",
 					border: "2px solid black",
 					borderRadius: "10px",
 				}}
@@ -91,6 +91,15 @@ function Home() {
 						className="btn-class"
 					>
 						Virtualized List
+					</button>
+					<button
+						onClick={() => navigate("/stepper-component")}
+						className="btn-class"
+					>
+						Stepper component
+					</button>
+					<button onClick={() => navigate("/todo-list")} className="btn-class">
+						Todo List
 					</button>
 				</div>
 			</div>

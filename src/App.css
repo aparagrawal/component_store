@@ -153,3 +153,62 @@ span {
 	align-items: center;
 	flex-direction: column;
 }
+
+.stepper {
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.step-container {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 2.5rem;
+	align-items: center;
+}
+.step-number {
+	height: 2.5rem;
+	width: 2.5rem;
+	border-radius: 50%;
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	position: absolute;
+}
+.step-line {
+	height: 2.5rem;
+	width: 1px;
+	background-color: gray;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	top: 2.5rem;
+}
+
+.step-label {
+	margin-left: 50px;
+}
+.active {
+	background-color: rgb(21, 172, 222);
+}
+.step-controller {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5rem;
+}
+.step-button {
+	margin: 5px;
+	height: 2rem;
+	width: 6rem;
+}
+.step-component {
+	height: 20rem;
+	width: 20rem;
+	border: 2px solid darkgray;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
