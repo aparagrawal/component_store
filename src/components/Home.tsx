@@ -86,6 +86,12 @@ function Home() {
 					<button onClick={() => navigate("/drag-drop")} className="btn-class">
 						Drag and Drop
 					</button>
+					<button
+						onClick={() => navigate("/virtialized-list")}
+						className="btn-class"
+					>
+						Virtualized List
+					</button>
 				</div>
 			</div>
 		</div>

@@ -15,6 +15,7 @@ import Modal from "./components/Modal";
 import MemoryGame from "./components/MemoryGame";
 import DragAndDrop from "./components/DragAndDrop";
 import { useState } from "react";
+import VirtualizedList from "./components/VirtualizedList";
 
 function App() {
 	const tabsData = [
@@ -35,6 +36,8 @@ function App() {
 			content: <div>Invoice Content</div>,
 		},
 	];
+
+	const List = Array.from({ length: 10000 }, (_, index) => index + 1);
 
 	const initialData = {
 		Todo: [
@@ -81,6 +84,17 @@ function App() {
 					}
 				/>
 				<Route path="/" element={<Home />} />
+				<Route
+					path="virtialized-list"
+					element={
+						<VirtualizedList
+							List={List}
+							height={400}
+							width={300}
+							innerHeight={35}
+						/>
+					}
+				/>
 			</Routes>
 		</Router>
 	);
