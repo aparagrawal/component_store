@@ -101,6 +101,12 @@ function Home() {
 					<button onClick={() => navigate("/todo-list")} className="btn-class">
 						Todo List
 					</button>
+					<button
+						onClick={() => navigate("/crypto-converter")}
+						className="btn-class"
+					>
+						Crypto Converter
+					</button>
 				</div>
 			</div>
 		</div>

@@ -18,6 +18,7 @@ import { useState } from "react";
 import VirtualizedList from "./components/VirtualizedList";
 import Stepper from "./components/Stepper";
 import TodoList from "./components/TodoList";
+import CryptoConverter from "./components/CryptoConverter";
 
 function App() {
 	const tabsData = [
@@ -112,6 +113,7 @@ function App() {
 					}
 				/>
 				<Route path="/" element={<Home />} />
+				<Route path="crypto-converter" element={<CryptoConverter />} />
 				<Route
 					path="virtialized-list"
 					element={
