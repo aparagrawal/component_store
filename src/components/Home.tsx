@@ -74,7 +74,7 @@ function Home() {
 					>
 						Traffic Lights
 					</button>
-					<button onClick={() => navigate("/Modal")} className="btn-class">
+					<button onClick={() => navigate("/modal")} className="btn-class">
 						Modal
 					</button>
 					<button
