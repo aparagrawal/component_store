@@ -107,6 +107,9 @@ function Home() {
 					>
 						Crypto Converter
 					</button>
+					<button onClick={() => navigate("/snake-game")} className="btn-class">
+						Snake Game
+					</button>
 				</div>
 			</div>
 		</div>

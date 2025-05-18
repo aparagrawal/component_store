@@ -19,6 +19,7 @@ import VirtualizedList from "./components/VirtualizedList";
 import Stepper from "./components/Stepper";
 import TodoList from "./components/TodoList";
 import CryptoConverter from "./components/CryptoConverter";
+import SnakeGame from "./components/SnakeGame";
 
 function App() {
 	const tabsData = [
@@ -112,6 +113,7 @@ function App() {
 						<Modal isOpen={showModal} closeModal={() => setShowModal(false)} />
 					}
 				/>
+				<Route path="snake-game" element={<SnakeGame />} />
 				<Route path="/" element={<Home />} />
 				<Route path="crypto-converter" element={<CryptoConverter />} />
 				<Route
