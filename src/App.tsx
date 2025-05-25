@@ -20,6 +20,7 @@ import Stepper from "./components/Stepper";
 import TodoList from "./components/TodoList";
 import CryptoConverter from "./components/CryptoConverter";
 import SnakeGame from "./components/SnakeGame";
+import CountDownTimer from "./components/CountDownTimer";
 
 function App() {
 	const tabsData = [
@@ -114,6 +115,7 @@ function App() {
 					}
 				/>
 				<Route path="snake-game" element={<SnakeGame />} />
+				<Route path="count-down" element={<CountDownTimer />} />
 				<Route path="/" element={<Home />} />
 				<Route path="crypto-converter" element={<CryptoConverter />} />
 				<Route

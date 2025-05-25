@@ -8,7 +8,6 @@ function InteractiveGrid() {
 	const queue = useRef<[number, number][]>([]);
 	const timerId = useRef<number[]>([]);
 
-	console.log("this is grid", grid);
 	const handleClick = (rowIndex: number, cellIndex: number, flag: boolean) => {
 		if (timerId.current.length > 0 && flag) {
 			return;

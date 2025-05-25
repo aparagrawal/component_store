@@ -31,7 +31,6 @@ function SnakeGame() {
 
 	const handleDirection = (e: any) => {
 		const key = e.key;
-		console.log(key);
 		if (key === "ArrowUp" && directionRef.current[1] !== 1) {
 			directionRef.current = [0, -1];
 		} else if (key === "ArrowLeft" && directionRef.current[0] !== 1) {

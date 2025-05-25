@@ -6,7 +6,6 @@ function InfiniteScroll() {
 	const [page, setPage] = useState(1);
 
 	useEffect(() => {
-		console.log("useEffect running...");
 		const fetchData = async () => {
 			try {
 				const res = await fetch(

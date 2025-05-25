@@ -234,3 +234,25 @@ span {
 	background-color: red;
 	border-radius: 50%;
 }
+.countdown-input {
+	height: 2rem;
+	width: 2rem;
+	padding: 1rem;
+	margin: 1rem;
+}
+.countdown-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 15rem;
+}
+.countdown-btn-container {
+	padding: 2rem;
+}
+.btn-timer {
+	height: 2rem;
+	width: 5rem;
+	margin: 1rem;
+	border-radius: 5px;
+}

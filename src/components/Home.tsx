@@ -110,6 +110,9 @@ function Home() {
 					<button onClick={() => navigate("/snake-game")} className="btn-class">
 						Snake Game
 					</button>
+					<button onClick={() => navigate("/count-down")} className="btn-class">
+						Stop Watch
+					</button>
 				</div>
 			</div>
 		</div>
