@@ -21,6 +21,7 @@ import TodoList from "./components/TodoList";
 import CryptoConverter from "./components/CryptoConverter";
 import SnakeGame from "./components/SnakeGame";
 import CountDownTimer from "./components/CountDownTimer";
+import Carousel from "./components/Carousel";
 
 function App() {
 	const tabsData = [
@@ -118,6 +119,7 @@ function App() {
 				<Route path="count-down" element={<CountDownTimer />} />
 				<Route path="/" element={<Home />} />
 				<Route path="crypto-converter" element={<CryptoConverter />} />
+				<Route path="carousel" element={<Carousel />} />
 				<Route
 					path="virtialized-list"
 					element={

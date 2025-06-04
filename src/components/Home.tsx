@@ -113,6 +113,9 @@ function Home() {
 					<button onClick={() => navigate("/count-down")} className="btn-class">
 						Stop Watch
 					</button>
+					<button onClick={() => navigate("/carousel")} className="btn-class">
+						Carousel
+					</button>
 				</div>
 			</div>
 		</div>
