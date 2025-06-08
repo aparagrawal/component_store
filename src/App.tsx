@@ -22,6 +22,7 @@ import CryptoConverter from "./components/CryptoConverter";
 import SnakeGame from "./components/SnakeGame";
 import CountDownTimer from "./components/CountDownTimer";
 import Carousel from "./components/Carousel";
+import SearchBar from "./components/SearchBar";
 
 function App() {
 	const tabsData = [
@@ -132,6 +133,7 @@ function App() {
 					}
 				/>
 				<Route path="todo-list" element={<TodoList />} />
+				<Route path="search-bar" element={<SearchBar />} />
 			</Routes>
 		</Router>
 	);

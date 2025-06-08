@@ -116,6 +116,9 @@ function Home() {
 					<button onClick={() => navigate("/carousel")} className="btn-class">
 						Carousel
 					</button>
+					<button onClick={() => navigate("/search-bar")} className="btn-class">
+						Search bar
+					</button>
 				</div>
 			</div>
 		</div>
