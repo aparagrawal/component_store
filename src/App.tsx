@@ -14,7 +14,7 @@ import TrafficLights from "./components/TrafficLights";
 import Modal from "./components/Modal";
 import MemoryGame from "./components/MemoryGame";
 import DragAndDrop from "./components/DragAndDrop";
-import { useState } from "react";
+import { Children, useState } from "react";
 import VirtualizedList from "./components/VirtualizedList";
 import Stepper from "./components/Stepper";
 import TodoList from "./components/TodoList";
@@ -23,6 +23,19 @@ import SnakeGame from "./components/SnakeGame";
 import CountDownTimer from "./components/CountDownTimer";
 import Carousel from "./components/Carousel";
 import SearchBar from "./components/SearchBar";
+import CommentBox from "./components/NestedComponent/CommentBox";
+import commentsData from "./NestedData.json";
+
+type Comment = {
+	id: number;
+	value: string;
+	parentId: number | null;
+	children: number[];
+};
+
+type Comments = {
+	[key: number]: Comment;
+};
 
 function App() {
 	const tabsData = [
@@ -87,6 +100,39 @@ function App() {
 	];
 
 	const [showModal, setShowModal] = useState(true);
+	const [comments, setComments] = useState<Comments>(commentsData.comments);
+
+	const addComment = (value: string, parentId: number) => {
+		const newId = Date.now();
+		const newComment: Comment = { id: newId, value, parentId, children: [] };
+		setComments((prevComment) => {
+			const updatedComment = { ...prevComment, [newId]: newComment };
+			updatedComment[parentId].children.push(newId);
+			return updatedComment;
+		});
+	};
+
+	const deleteComment = (id: number) => {
+		const parentId = comments[id].parentId;
+		if (parentId === null) return;
+
+		setComments((prevComments) => {
+			const updatedComments = { ...prevComments };
+			updatedComments[parentId].children = updatedComments[
+				parentId
+			].children.filter((childId) => childId !== id);
+
+			const queue = [id];
+			while (queue.length > 0) {
+				const nodeToDelete = queue.shift();
+				if (nodeToDelete === undefined) continue;
+
+				queue.push(...updatedComments[nodeToDelete].children);
+				delete updatedComments[nodeToDelete];
+			}
+			return updatedComments;
+		});
+	};
 
 	return (
 		<Router basename="component_store">
@@ -134,6 +180,17 @@ function App() {
 				/>
 				<Route path="todo-list" element={<TodoList />} />
 				<Route path="search-bar" element={<SearchBar />} />
+				<Route
+					path="nested-component"
+					element={
+						<CommentBox
+							comment={comments[1]}
+							allComments={comments}
+							addComment={addComment}
+							deleteComment={deleteComment}
+						/>
+					}
+				/>
 			</Routes>
 		</Router>
 	);

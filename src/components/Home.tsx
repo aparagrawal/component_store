@@ -9,7 +9,7 @@ function Home() {
 			<h2>Choose components</h2>
 			<div
 				style={{
-					height: "400px",
+					height: "500px",
 					width: "600px",
 					border: "2px solid black",
 					borderRadius: "10px",
@@ -118,6 +118,12 @@ function Home() {
 					</button>
 					<button onClick={() => navigate("/search-bar")} className="btn-class">
 						Search bar
+					</button>
+					<button
+						onClick={() => navigate("/nested-component")}
+						className="btn-class"
+					>
+						Nested Component
 					</button>
 				</div>
 			</div>
