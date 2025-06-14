@@ -25,7 +25,7 @@ import Carousel from "./components/Carousel";
 import SearchBar from "./components/SearchBar";
 import CommentBox from "./components/NestedComponent/CommentBox";
 import commentsData from "./NestedData.json";
-
+import TicTacToe from "./components/TicTacToe/Tictactoe";
 type Comment = {
 	id: number;
 	value: string;
@@ -180,6 +180,7 @@ function App() {
 				/>
 				<Route path="todo-list" element={<TodoList />} />
 				<Route path="search-bar" element={<SearchBar />} />
+				<Route path="tic-tac-toe" element={<TicTacToe />} />
 				<Route
 					path="nested-component"
 					element={

@@ -125,6 +125,12 @@ function Home() {
 					>
 						Nested Component
 					</button>
+					<button
+						onClick={() => navigate("/tic-tac-toe")}
+						className="btn-class"
+					>
+						Tic Tac Toe
+					</button>
 				</div>
 			</div>
 		</div>
