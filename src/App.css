@@ -32,11 +32,32 @@
 	position: relative;
 }
 
-span {
+.accordian span {
 	position: absolute;
 	cursor: pointer;
 	right: 2rem;
 	bottom: 2rem;
+}
+
+.qna {
+	border: 2px solid black;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	position: relative;
+}
+
+.qna span {
+	position: absolute;
+	cursor: pointer;
+	right: 2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.qna hr {
+	margin: 0.5rem 0;
 }
 
 .container-file {

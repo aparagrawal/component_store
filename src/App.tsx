@@ -26,6 +26,8 @@ import SearchBar from "./components/SearchBar";
 import CommentBox from "./components/NestedComponent/CommentBox";
 import commentsData from "./NestedData.json";
 import TicTacToe from "./components/TicTacToe/Tictactoe";
+import FAQ from "./components/FAQComponent/FAQ";
+import data from "./components/FAQComponent/faqData.json";
 type Comment = {
 	id: number;
 	value: string;
@@ -181,6 +183,7 @@ function App() {
 				<Route path="todo-list" element={<TodoList />} />
 				<Route path="search-bar" element={<SearchBar />} />
 				<Route path="tic-tac-toe" element={<TicTacToe />} />
+				<Route path="faq-component" element={<FAQ data={data} />} />
 				<Route
 					path="nested-component"
 					element={

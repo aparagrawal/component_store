@@ -1,0 +1,36 @@
+{
+	"faqs": [
+		{
+			"question": "What is frontend development?",
+			"answer": "Frontend development refers to the process of building the user interface and user experience of a website or web application."
+		},
+		{
+			"question": "What languages are used in frontend development?",
+			"answer": "The primary languages used in frontend development are HTML, CSS, and JavaScript."
+		},
+		{
+			"question": "What are some popular frontend frameworks and libraries?",
+			"answer": "Some popular frontend frameworks and libraries include React, Angular, Vue.js, and Svelte."
+		},
+		{
+			"question": "What is responsive design?",
+			"answer": "Responsive design is an approach to web design that makes web pages render well on a variety of devices and screen sizes."
+		},
+		{
+			"question": "What are CSS preprocessors?",
+			"answer": "CSS preprocessors are scripting languages that extend CSS and compile it into regular CSS. Examples include Sass, LESS, and Stylus."
+		},
+		{
+			"question": "What is the Document Object Model (DOM)?",
+			"answer": "The Document Object Model (DOM) is a programming interface for web documents that represents the page so that programs can change the document structure, style, and content."
+		},
+		{
+			"question": "What is the role of a frontend developer?",
+			"answer": "A frontend developer is responsible for implementing visual elements that users see and interact with in a web application."
+		},
+		{
+			"question": "What tools are commonly used by frontend developers?",
+			"answer": "Frontend developers commonly use a variety of tools including code editors (like VS Code), version control (like Git), build tools (like Webpack), and browser developer tools."
+		}
+	]
+}

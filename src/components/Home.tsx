@@ -131,6 +131,12 @@ function Home() {
 					>
 						Tic Tac Toe
 					</button>
+					<button
+						onClick={() => navigate("/faq-component")}
+						className="btn-class"
+					>
+						FAQ component
+					</button>
 				</div>
 			</div>
 		</div>
